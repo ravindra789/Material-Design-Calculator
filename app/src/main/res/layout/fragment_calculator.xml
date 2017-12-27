@@ -1,0 +1,195 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.calculator.view.fragments.CalculatorFragment">
+
+    <RelativeLayout
+        android:id="@+id/rl_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:paddingBottom="22dp"
+        android:paddingTop="22dp"
+        android:background="@color/colorKindOfWhite">
+
+    <ImageButton
+        android:id="@+id/img_btn_display_delete"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/ic_clear_black"
+        style="@style/DisplayImageButtonTheme"/>
+
+    <HorizontalScrollView
+        android:id="@+id/hor_display_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_toRightOf="@+id/img_btn_display_delete"
+        android:layout_toEndOf="@+id/img_btn_display_delete"
+        style="@style/DisplayScrollTheme">
+
+        <TextView
+            android:id="@+id/txt_display_numbers"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_gravity="end"
+            tools:text=""
+            style="@style/DisplayTextTheme"/>
+
+    </HorizontalScrollView>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/rl_display">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_number_seven"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="7"
+            android:layout_weight="1"
+            style="@style/InputButtonsTheme"/>
+        <Button
+            android:id="@+id/btn_number_eight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="8"
+            android:layout_weight="1"
+            style="@style/InputButtonsTheme"/>
+        <Button
+            android:id="@+id/btn_number_nine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="9"
+            android:layout_weight="1"
+            style="@style/InputButtonsTheme"/>
+        <Button
+            android:id="@+id/btn_operator_divide"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="/"
+            android:layout_weight="1"
+            style="@style/InputOperationButtonsTheme"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_number_four"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="4"
+            android:layout_weight="1"
+            style="@style/InputButtonsTheme"/>
+        <Button
+            android:id="@+id/btn_number_five"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="5"
+            android:layout_weight="1"
+            style="@style/InputButtonsTheme"/>
+        <Button
+            android:id="@+id/btn_number_six"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="6"
+            android:layout_weight="1"
+            style="@style/InputButtonsTheme"/>
+        <Button
+            android:id="@+id/btn_operator_multiply"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="*"
+            android:layout_weight="1"
+            style="@style/InputOperationButtonsTheme"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_number_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:layout_weight="1"
+            style="@style/InputButtonsTheme"/>
+        <Button
+            android:id="@+id/btn_number_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:layout_weight="1"
+            style="@style/InputButtonsTheme"/>
+        <Button
+            android:id="@+id/btn_number_three"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="3"
+            android:layout_weight="1"
+            style="@style/InputButtonsTheme"/>
+        <Button
+            android:id="@+id/btn_operator_minus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="-"
+            android:layout_weight="1"
+            style="@style/InputOperationButtonsTheme"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_operator_dot"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="."
+            android:layout_weight="1"
+            style="@style/InputButtonsTheme"/>
+        <Button
+            android:id="@+id/btn_number_zero"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:layout_weight="1"
+            style="@style/InputButtonsTheme"/>
+        <Button
+            android:id="@+id/btn_operator_equal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="="
+            android:layout_weight="1"
+            style="@style/InputButtonsTheme"/>
+        <Button
+            android:id="@+id/btn_operator_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="+"
+            android:layout_weight="1"
+            style="@style/InputOperationButtonsTheme"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
